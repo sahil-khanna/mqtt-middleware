@@ -1,0 +1,23 @@
+{
+  "name": "mqtt_middleware",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/App.js",
+  "scripts": {
+    "start": "tsc -p ./ && concurrently \"tsc -w -p ./\" \"nodemon dist/index.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.14.12",
+    "tslint": "^5.9.1"
+  },
+  "dependencies": {
+    "@types/amqp": "^0.2.3",
+    "@types/redis": "^2.8.5",
+    "amqp": "^0.2.6",
+    "concurrently": "^3.5.1",
+    "redis": "^2.8.0"
+  }
+}
